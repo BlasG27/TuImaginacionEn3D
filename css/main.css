@@ -1,0 +1,159 @@
+/*Estilos de Nav para mis sitios*/
+.navbar .divNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navbar .divNav .navbar-brand {
+    font-size: 1.6rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition-timing-function: ease;
+    transition: .5s; }
+    .navbar .divNav .navbar-brand:hover {
+      transform: scale(1.2, 1.2); }
+  .navbar .divNav .navbar-toggler {
+    border: .2rem black solid;
+    border-radius: .5rem; }
+  .navbar .divNav .enlaces {
+    flex-grow: 0;
+    font-size: 1.5rem; }
+    .navbar .divNav .enlaces .navbar-nav .nav-item {
+      margin: .2rem;
+      text-align: center; }
+      .navbar .divNav .enlaces .navbar-nav .nav-item .nav-link {
+        padding: 1rem;
+        color: black;
+        border-radius: .2rem;
+        transition: .5s; }
+        .navbar .divNav .enlaces .navbar-nav .nav-item .nav-link:hover {
+          background-color: black;
+          color: white; }
+      .navbar .divNav .enlaces .navbar-nav .nav-item #contact-button {
+        background-color: black;
+        color: white; }
+
+/*Estilos de mis sitios*/
+.main-wrapper header {
+  padding: 10rem 0;
+  margin: 1rem 0;
+  background-image: url("../imagenes/impresora2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right; }
+  .main-wrapper header .header-title {
+    margin-left: 1rem;
+    padding: .5rem;
+    max-width: 30rem;
+    color: white;
+    background-color: black;
+    border-radius: .5rem; }
+    .main-wrapper header .header-title h1 {
+      font-size: 3rem; }
+    .main-wrapper header .header-title p {
+      font-size: 1.5rem; }
+
+.main-wrapper main .home-sectionProductos .subtitle {
+  text-align: center;
+  margin: 3rem 0; }
+
+.main-wrapper main .home-sectionProductos .home-Productos {
+  display: flex;
+  margin-left: 3.5%; }
+  .main-wrapper main .home-sectionProductos .home-Productos .link-homeProductos {
+    position: relative; }
+    .main-wrapper main .home-sectionProductos .home-Productos .link-homeProductos .productos {
+      width: 90%;
+      border-radius: .5rem; }
+    .main-wrapper main .home-sectionProductos .home-Productos .link-homeProductos .card-title {
+      position: absolute;
+      top: 90%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      font-size: 2rem;
+      font-weight: 500;
+      background-color: white;
+      color: black;
+      border-radius: .5rem;
+      padding: .5rem; }
+
+.main-wrapper main .home-sectionAbout {
+  background-color: #ebedee;
+  padding: 3rem; }
+  .main-wrapper main .home-sectionAbout .subtitle {
+    font-size: 3rem;
+    margin: 0 1rem; }
+    @media screen and (min-width: 550px) {
+      .main-wrapper main .home-sectionAbout .subtitle {
+        font-size: 5rem;
+        margin: 0 3rem; } }
+  .main-wrapper main .home-sectionAbout .description-homeAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .main-wrapper main .home-sectionAbout .description-homeAbout {
+        flex-direction: row; } }
+    .main-wrapper main .home-sectionAbout .description-homeAbout div {
+      margin: 2rem 0; }
+      .main-wrapper main .home-sectionAbout .description-homeAbout div .texto {
+        font-size: 1.5rem;
+        font-weight: 500;
+        max-width: 40rem;
+        padding: 1rem; }
+        @media screen and (min-width: 550px) {
+          .main-wrapper main .home-sectionAbout .description-homeAbout div .texto {
+            font-size: 2rem; } }
+      .main-wrapper main .home-sectionAbout .description-homeAbout div .button-toNosotros {
+        background-color: black;
+        color: white;
+        border-radius: .5rem;
+        margin: 0 1rem; }
+    .main-wrapper main .home-sectionAbout .description-homeAbout img {
+      width: 90%;
+      min-width: 19rem;
+      max-width: 30rem;
+      border-radius: 14rem; }
+
+.main-wrapper main .home-sectionGift {
+  padding: 3rem; }
+  .main-wrapper main .home-sectionGift .subtitle {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 1rem; }
+    @media screen and (min-width: 550px) {
+      .main-wrapper main .home-sectionGift .subtitle {
+        font-size: 5rem;
+        margin: 0 3rem; } }
+    @media screen and (min-width: 768px) {
+      .main-wrapper main .home-sectionGift .subtitle {
+        text-align: right; } }
+  .main-wrapper main .home-sectionGift .descripcion-homeGift {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .main-wrapper main .home-sectionGift .descripcion-homeGift {
+        flex-direction: row; } }
+    .main-wrapper main .home-sectionGift .descripcion-homeGift div .texto {
+      font-size: 1.5rem;
+      font-weight: 500;
+      max-width: 40rem;
+      padding: 1rem; }
+      @media screen and (min-width: 550px) {
+        .main-wrapper main .home-sectionGift .descripcion-homeGift div .texto {
+          font-size: 2rem; } }
+    .main-wrapper main .home-sectionGift .descripcion-homeGift div .button-toGiftcard {
+      background-color: black;
+      color: white;
+      border-radius: .5rem;
+      margin: 0 1rem; }
+    .main-wrapper main .home-sectionGift .descripcion-homeGift img {
+      width: 90%;
+      min-width: 19rem;
+      max-width: 30rem;
+      border-radius: 14rem; }
