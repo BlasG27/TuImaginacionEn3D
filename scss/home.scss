@@ -1,14 +1,21 @@
 .main-wrapper {
     header {
-        padding: 10rem 0;
-        margin: 1rem 0;
-        background-image: url("../imagenes/impresora2.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right;
+        padding: 3rem 0;
+        background-image: none;
+
+        @media screen and (min-width:375px) {
+            background-image: url("../imagenes/impresora2.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+        }
+
+        @media screen and (min-width:650px) {
+            padding: 10rem 0;
+        }
 
         .header-title {
-            margin-left: 1rem;
+            margin: 1rem;
             padding: .5rem;
             max-width: 30rem;
             color: white;
@@ -17,6 +24,10 @@
 
             h1 {
                 font-size: 3rem;
+
+                .resaltar {
+                    color: #ffdf00;
+                }
             }
 
             p {
@@ -41,7 +52,7 @@
                     position: relative;
 
                     .productos {
-                        width: 90%;
+                        width: 85%;
                         border-radius: .5rem;
                     }
 
@@ -89,24 +100,28 @@
                     flex-direction: row;
                 }
 
-                div{
+                div {
                     margin: 2rem 0;
+
                     .texto {
                         font-size: 1.5rem;
                         font-weight: 500;
                         max-width: 40rem;
                         padding: 1rem;
-    
+
                         @media screen and (min-width:550px) {
                             font-size: 2rem;
                         }
-    
+
                     }
-                    .button-toNosotros{
+
+                    .button-toNosotros {
                         background-color: black;
-                        color: white;
+                        color: #ffdf00;
                         border-radius: .5rem;
+                        padding: 1rem;
                         margin: 0 1rem;
+                        font-weight: 600;
                     }
                 }
 
@@ -126,7 +141,7 @@
             .subtitle {
                 text-align: center;
                 font-size: 3rem;
-                margin:2rem 1rem;
+                margin: 2rem 1rem;
 
                 @media screen and (min-width:550px) {
                     font-size: 5rem;
@@ -162,9 +177,11 @@
 
                     .button-toGiftcard {
                         background-color: black;
-                        color: white;
+                        color: #ffdf00;
                         border-radius: .5rem;
+                        padding: 1rem;
                         margin: 0 1rem;
+                        font-weight: 600;
                     }
                 }
 

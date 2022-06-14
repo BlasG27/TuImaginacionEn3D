@@ -9,12 +9,17 @@
 
         .navbar-brand{
             font-size: 1.6rem;
+            font-weight: 500;
             background-color: black;
-            color: rgb(255, 255, 255);
+            color: white;
             padding: 1rem;
             border-radius: 2rem;
             transition-timing-function: ease;
             transition: .5s;
+
+            @media screen and (max-width:425px){
+                font-size: 1rem;
+            }
 
             &:hover{
                 transform: scale(1.2, 1.2);
@@ -22,7 +27,7 @@
         }
 
         .navbar-toggler{
-            border: .2rem black solid;
+            border: black solid;
             border-radius: .5rem
         }
 
@@ -55,4 +60,12 @@
             }
         }
     }
+}
+
+/*Estilos de Footer para mis sitios*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
 }
