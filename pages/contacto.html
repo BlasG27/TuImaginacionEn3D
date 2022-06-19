@@ -34,13 +34,14 @@
     <link rel="stylesheet" href="../css/main.css">
 
 </head>
+
 <body>
-    <div class="main-wrapper-productos">
+    <div class="main-wrapper-contacto">
         <nav class="navbar navbar-expand-lg bg-light">
 
             <div class="container divNav">
 
-                <a class="navbar-brand" href="index.html">Tu Imaginacion En 3D</a>
+                <a class="navbar-brand" href="../index.html">Tu Imaginacion En 3D</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +63,8 @@
                             <a class="nav-link" href="giftcard.html">Giftcard</a>
                         </li>
                         <li class="nav-item">
-                            <a id="contact-button" class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                            <a id="contact-button" class="nav-link" aria-current="page"
+                                href="contacto.html">Contacto</a>
                         </li>
                     </ul>
 
@@ -71,6 +73,44 @@
             </div>
 
         </nav>
+        <header>
+            <h1>
+                Formulario de Contacto!
+            </h1>
+            <p>
+                Completa nuestro Formulario de Contacto para recibir una notificacion Nuestra! <br>
+                Tambien podes Contactarnos por nuestras redes sociales!
+            </p>
+        </header>
+        <main>
+            <form class="formulario">
+                <label class="formulario-contacto" for="name">Nombre</label>
+                <input class="formulario-contacto" type="text" placeholder="Nombre y Apellido">
+
+                <label class="formulario-contacto" for="email">Email</label>
+                <input class="formulario-contacto" type="email" placeholder="Correo Electronico"
+                    name="Correo Electronico">
+
+                <label class="formulario-contacto" for="cel">Numero de Contacto</label>
+                <input class="formulario-contacto" type="cel" name="phone" placeholder="ej: 011 6493-1231">
+
+
+                <label for="sugerencias" class="formulario-contacto">Comentarios</label>
+                <textarea class="formulario-contacto" name="sugerencias" placeholder="Mensaje..." cols="28" rows="10">
+                </textarea>
+
+
+                <div class="div-buttonFormulario">
+                    <input type="submit" value="enviar" class="button-formulario">
+                    <input type="reset" value="limpiar" class="button-formulario">
+                </div>
+            </form>
+
+            <section class="section-contactoRedes">
+
+            </section>
+        </main>
+
         <footer>
             <h5>
                 © 2022 tu imaginacion en 3D Argentina
@@ -85,4 +125,5 @@
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
