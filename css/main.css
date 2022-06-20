@@ -82,7 +82,6 @@ footer {
     max-width: 325rem;
     min-width: 19rem; }
     .main-wrapper main .home-sectionProductos .home-Productos div div {
-      max-width: 3;
       position: relative; }
       .main-wrapper main .home-sectionProductos .home-Productos div div .link-homeProductos {
         text-align: center; }
@@ -220,10 +219,55 @@ footer {
       margin: 2rem;
       font-weight: 550; }
 
-.main-wrapper-giftcard header h1 {
+.main-wrapper-Giftcard header h1 {
   text-align: center;
   font-size: 2rem;
   padding: 6rem 0; }
+
+.main-wrapper-Giftcard main {
+  margin-bottom: 5rem; }
+  .main-wrapper-Giftcard main section {
+    display: flex;
+    justify-content: space-evenly; }
+    @media screen and (max-width: 768px) {
+      .main-wrapper-Giftcard main section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
+    .main-wrapper-Giftcard main section .img-cont {
+      width: 90%;
+      max-width: 35rem;
+      min-width: 19rem;
+      margin: .5rem; }
+      .main-wrapper-Giftcard main section .img-cont .giftcardImg {
+        width: 100%;
+        margin: auto;
+        border-radius: .5rem; }
+    .main-wrapper-Giftcard main section .description-cont {
+      margin: .5rem; }
+      .main-wrapper-Giftcard main section .description-cont .giftcard-description {
+        font-size: 1.7rem;
+        font-weight: 500;
+        max-width: 40rem; }
+      .main-wrapper-Giftcard main section .description-cont .enlaces {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center; }
+        @media screen and (max-width: 520px) {
+          .main-wrapper-Giftcard main section .description-cont .enlaces {
+            flex-direction: column; } }
+        .main-wrapper-Giftcard main section .description-cont .enlaces .description-link {
+          margin-top: 3rem; }
+          .main-wrapper-Giftcard main section .description-cont .enlaces .description-link p {
+            font-weight: 600; }
+          .main-wrapper-Giftcard main section .description-cont .enlaces .description-link a .button {
+            background-color: black;
+            color: #ffdf00;
+            border-radius: .5rem;
+            padding: 1rem;
+            margin: 0 1rem;
+            font-weight: 600; }
 
 .main-wrapper-contacto header {
   display: flex; }
@@ -275,3 +319,48 @@ footer {
       padding: 1rem;
       font-weight: 600;
       border-radius: .5rem; }
+
+.main-wrapper-productos header {
+  color: #ffdf00;
+  background-color: black;
+  padding: .8rem 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+.main-wrapper-productos main .section-productos {
+  display: flex;
+  background-color: #ebedee; }
+  .main-wrapper-productos main .section-productos .navBar-productos .enlaces .list-item .list-link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-top: .7rem; }
+  .main-wrapper-productos main .section-productos .productos {
+    width: 100%;
+    margin: 2rem; }
+    .main-wrapper-productos main .section-productos .productos #figuras {
+      display: grid;
+      grid-auto-flow: dense;
+      grid-auto-rows: 30rem;
+      grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+      gap: 1rem; }
+      .main-wrapper-productos main .section-productos .productos #figuras .card {
+        width: 15rem;
+        border: solid 0.2rem black;
+        border-radius: .5rem;
+        text-align: center; }
+        .main-wrapper-productos main .section-productos .productos #figuras .card .imgProducto {
+          width: 100%; }
+        .main-wrapper-productos main .section-productos .productos #figuras .card .card-title {
+          margin-bottom: 3rem;
+          color: #595959; }
+        .main-wrapper-productos main .section-productos .productos #figuras .card a {
+          margin-bottom: 1rem; }
+          .main-wrapper-productos main .section-productos .productos #figuras .card a .button {
+            background-color: black;
+            color: white;
+            border-radius: .5rem;
+            padding: .2rem 2rem;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            font-weight: 600; }
