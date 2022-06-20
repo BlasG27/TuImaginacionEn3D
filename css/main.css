@@ -1,3 +1,5 @@
+/*Vars para mis sitios*/
+/*Colores*/
 /*Estilos de Nav para mis sitios*/
 .navbar .divNav {
   display: flex;
@@ -18,7 +20,7 @@
     .navbar .divNav .navbar-brand:hover {
       transform: scale(1.2, 1.2); }
   .navbar .divNav .navbar-toggler {
-    border: black solid;
+    border: solid;
     border-radius: .5rem; }
   .navbar .divNav .enlaces {
     flex-grow: 0;
@@ -42,21 +44,18 @@
 footer {
   background-color: black;
   color: white;
-  padding: 5rem 0;
+  padding: 4rem 0;
   text-align: center; }
 
 /*Estilos de mis sitios*/
 .main-wrapper header {
-  padding: 3rem 0;
   background-image: none; }
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 650px) {
     .main-wrapper header {
       background-image: url("../imagenes/impresora2.jpg");
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: right; } }
-  @media screen and (min-width: 650px) {
-    .main-wrapper header {
+      background-position: right;
       padding: 10rem 0; } }
   .main-wrapper header .header-title {
     margin: 1rem;
@@ -72,30 +71,33 @@ footer {
     .main-wrapper header .header-title p {
       font-size: 1.5rem; }
 
-.main-wrapper main .home-sectionProductos .subtitle {
-  text-align: center;
-  margin: 3rem 0; }
-
 .main-wrapper main .home-sectionProductos .home-Productos {
-  display: flex;
-  margin-left: 3.5%; }
-  .main-wrapper main .home-sectionProductos .home-Productos .link-homeProductos {
-    position: relative; }
-    .main-wrapper main .home-sectionProductos .home-Productos .link-homeProductos .productos {
-      width: 85%;
-      border-radius: .5rem; }
-    .main-wrapper main .home-sectionProductos .home-Productos .link-homeProductos .card-title {
-      position: absolute;
-      top: 90%;
-      left: 20%;
-      transform: translate(-50%, -50%);
-      z-index: 1;
-      font-size: 2rem;
-      font-weight: 500;
-      background-color: white;
-      color: black;
-      border-radius: .5rem;
-      padding: .5rem; }
+  text-align: center; }
+  .main-wrapper main .home-sectionProductos .home-Productos div div .subtitle {
+    text-align: center;
+    margin: 3rem 0; }
+  .main-wrapper main .home-sectionProductos .home-Productos div {
+    max-width: 325rem;
+    min-width: 19rem; }
+    .main-wrapper main .home-sectionProductos .home-Productos div div {
+      position: relative; }
+      .main-wrapper main .home-sectionProductos .home-Productos div div .link-homeProductos {
+        text-align: center; }
+        .main-wrapper main .home-sectionProductos .home-Productos div div .link-homeProductos .productos {
+          width: 90%;
+          border-radius: .6rem;
+          margin-bottom: 4rem; }
+        .main-wrapper main .home-sectionProductos .home-Productos div div .link-homeProductos .card-title {
+          position: absolute;
+          top: 1rem;
+          left: 4rem;
+          z-index: 1;
+          font-size: 2rem;
+          font-weight: 600;
+          background-color: white;
+          color: black;
+          border-radius: .5rem;
+          padding: .5rem; }
 
 .main-wrapper main .home-sectionAbout {
   background-color: #ebedee;
@@ -136,14 +138,14 @@ footer {
       width: 90%;
       min-width: 19rem;
       max-width: 30rem;
-      border-radius: 14rem; }
+      border-radius: 15rem; }
 
 .main-wrapper main .home-sectionGift {
   padding: 3rem; }
   .main-wrapper main .home-sectionGift .subtitle {
     text-align: center;
     font-size: 3rem;
-    margin: 2rem 1rem; }
+    margin: 0 1rem; }
     @media screen and (min-width: 550px) {
       .main-wrapper main .home-sectionGift .subtitle {
         font-size: 5rem;
@@ -178,7 +180,8 @@ footer {
       width: 90%;
       min-width: 19rem;
       max-width: 30rem;
-      border-radius: 14rem; }
+      margin: 3rem 0;
+      border-radius: 15rem; }
 
 .main-wrapper-nosotros header h1 {
   text-align: center;
@@ -215,7 +218,199 @@ footer {
       margin: 2rem;
       font-weight: 550; }
 
-.main-wrapper-giftcard header h1 {
+.main-wrapper-Giftcard header h1 {
   text-align: center;
   font-size: 2rem;
   padding: 6rem 0; }
+
+.main-wrapper-Giftcard main {
+  margin-bottom: 5rem; }
+  .main-wrapper-Giftcard main section {
+    display: flex;
+    justify-content: space-evenly; }
+    @media screen and (max-width: 768px) {
+      .main-wrapper-Giftcard main section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
+    .main-wrapper-Giftcard main section .img-cont {
+      width: 90%;
+      max-width: 35rem;
+      min-width: 19rem;
+      margin: .5rem; }
+      .main-wrapper-Giftcard main section .img-cont .giftcardImg {
+        width: 100%;
+        margin: auto;
+        border-radius: .5rem; }
+    .main-wrapper-Giftcard main section .description-cont {
+      margin: .5rem; }
+      .main-wrapper-Giftcard main section .description-cont .giftcard-description {
+        font-size: 1.7rem;
+        font-weight: 500;
+        max-width: 40rem; }
+      .main-wrapper-Giftcard main section .description-cont .enlaces {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center; }
+        @media screen and (max-width: 520px) {
+          .main-wrapper-Giftcard main section .description-cont .enlaces {
+            flex-direction: column; } }
+        .main-wrapper-Giftcard main section .description-cont .enlaces .description-link {
+          margin-top: 3rem; }
+          .main-wrapper-Giftcard main section .description-cont .enlaces .description-link p {
+            font-weight: 600; }
+          .main-wrapper-Giftcard main section .description-cont .enlaces .description-link a .button {
+            background-color: black;
+            color: #ffdf00;
+            border-radius: .5rem;
+            padding: 1rem;
+            margin: 0 1rem;
+            font-weight: 600; }
+
+.main-wrapper-contacto header {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .main-wrapper-contacto header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  .main-wrapper-contacto header h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: black;
+    margin: 2rem; }
+    @media screen and (max-width: 425px) {
+      .main-wrapper-contacto header h1 {
+        font-size: 3.5rem; } }
+  .main-wrapper-contacto header p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5rem 2rem;
+    width: 60%;
+    margin: 5rem 0;
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+    min-width: 20rem; }
+
+.main-wrapper-contacto main .formulario-ssection {
+  background-color: #ebedee;
+  padding: 5rem 0;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center; }
+  .main-wrapper-contacto main .formulario-ssection .formulario {
+    background-color: black;
+    color: #ffdf00;
+    width: 90%;
+    min-width: 19rem;
+    max-width: 40rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main-wrapper-contacto main .formulario-ssection .formulario .formulario-contacto {
+      text-align: center;
+      font-weight: 500;
+      padding: .6rem 2.5rem;
+      display: block;
+      border-radius: .5rem; }
+    .main-wrapper-contacto main .formulario-ssection .formulario .comentarios {
+      width: 17rem;
+      max-height: 10rem;
+      min-height: 10rem; }
+    .main-wrapper-contacto main .formulario-ssection .formulario .div-buttonFormulario .button-formulario {
+      margin: 2rem;
+      padding: 1rem;
+      font-weight: 600;
+      border-radius: .5rem; }
+
+.main-wrapper-contacto main .section-contactoRedes {
+  margin-bottom: 5rem;
+  text-align: center; }
+  .main-wrapper-contacto main .section-contactoRedes h2 {
+    font-size: 4rem;
+    margin-bottom: 5rem; }
+  .main-wrapper-contacto main .section-contactoRedes .redesCont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    @media screen and (max-width: 768px) {
+      .main-wrapper-contacto main .section-contactoRedes .redesCont {
+        flex-direction: column; } }
+    .main-wrapper-contacto main .section-contactoRedes .redesCont .redes-link {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-decoration: none; }
+      .main-wrapper-contacto main .section-contactoRedes .redesCont .redes-link i img {
+        width: 5rem; }
+
+.main-wrapper-productos header {
+  color: #ffdf00;
+  background-color: black;
+  padding: .8rem 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+.main-wrapper-productos main .section-productos {
+  display: flex;
+  padding: 2rem;
+  background-color: #ebedee; }
+  @media screen and (max-width: 768px) {
+    .main-wrapper-productos main .section-productos {
+      padding: 0;
+      flex-direction: column;
+      justify-content: center; } }
+  .main-wrapper-productos main .section-productos .navBar-productos .enlaces {
+    padding: 0; }
+    @media screen and (max-width: 768px) {
+      .main-wrapper-productos main .section-productos .navBar-productos .enlaces {
+        display: flex;
+        flex-wrap: wrap; } }
+    .main-wrapper-productos main .section-productos .navBar-productos .enlaces .list-item {
+      list-style: none; }
+      .main-wrapper-productos main .section-productos .navBar-productos .enlaces .list-item .list-link {
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-top: .7rem; }
+        .main-wrapper-productos main .section-productos .navBar-productos .enlaces .list-item .list-link:hover {
+          text-decoration: underline; }
+        @media screen and (max-width: 768px) {
+          .main-wrapper-productos main .section-productos .navBar-productos .enlaces .list-item .list-link {
+            margin-left: 1rem; } }
+        .main-wrapper-productos main .section-productos .navBar-productos .enlaces .list-item .list-link .button {
+          background-color: black;
+          color: #ffdf00;
+          border-radius: .5rem;
+          padding: .5rem 2rem;
+          font-weight: 400; }
+  .main-wrapper-productos main .section-productos .productos {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-auto-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 1rem; }
+    .main-wrapper-productos main .section-productos .productos .card {
+      border: solid 0.2rem black;
+      border-radius: .5rem;
+      margin: 1rem;
+      text-align: center; }
+      .main-wrapper-productos main .section-productos .productos .card .imgProducto {
+        width: 100%; }
+      .main-wrapper-productos main .section-productos .productos .card .card-title {
+        margin-bottom: 3rem;
+        color: #595959; }
+      .main-wrapper-productos main .section-productos .productos .card a {
+        margin-bottom: 1rem; }
+        .main-wrapper-productos main .section-productos .productos .card a .button {
+          background-color: black;
+          color: white;
+          border-radius: .5rem;
+          padding: .2rem 2rem;
+          margin: 0 1rem;
+          font-size: 1.5rem;
+          font-weight: 600; }

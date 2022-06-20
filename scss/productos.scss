@@ -1,0 +1,99 @@
+.main-wrapper-productos {
+    header {
+        color: $resaltar;
+        background-color: $back-colorStyle2;
+        padding: .8rem 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    main {
+        .section-productos {
+            display: flex;
+            padding: 2rem;
+            background-color: $back-colorStyle3;
+
+            @media screen and (max-width:768px) {
+                padding: 0;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .navBar-productos {
+                .enlaces {
+                    padding: 0;
+                    @media screen and (max-width:768px) {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+
+                    .list-item {
+                        list-style: none;
+
+                        .list-link {
+                            display: block;
+                            text-decoration: none;
+                            color: $colorstyle2;
+                            margin-top: .7rem;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+
+                            @media screen and (max-width:768px) {
+                                margin-left: 1rem;
+                            }
+
+                            .button {
+                                background-color: $back-colorStyle2;
+                                color: $resaltar;
+                                border-radius: .5rem;
+                                padding: .5rem 2rem;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .productos {
+                width: 100%;
+                display: grid;
+                grid-auto-flow: dense;
+                grid-auto-rows: repeat(auto-fill, 1fr);
+                grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+                gap: 1rem;
+
+                .card {
+                    border: solid .2rem $colorstyle2;
+                    border-radius: .5rem;
+                    margin: 1rem;
+                    text-align: center;
+
+                    .imgProducto {
+                        width: 100%;
+                    }
+
+                    .card-title {
+                        margin-bottom: 3rem;
+                        color: $colorStyle3;
+                    }
+
+                    a {
+                        margin-bottom: 1rem;
+
+                        .button {
+                            background-color: $back-colorStyle2;
+                            color: $colorStyle1;
+                            border-radius: .5rem;
+                            padding: .2rem 2rem;
+                            margin: 0 1rem;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
